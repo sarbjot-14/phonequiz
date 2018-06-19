@@ -1,0 +1,71 @@
+#theTitle{
+  font-size: 70px;
+  text-align: center;
+  font-weight: 400;
+
+}
+
+#trlong{
+
+  border-left-color: coral;
+  text-align: center;
+  margin-top:200px;
+}
+#tr{
+
+  border-bottom:solid #300069 4px;
+
+
+}
+
+
+table{
+    margin-top:100px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 75%%;
+  }
+
+#tdRank{
+
+  width: 10%;
+
+
+}
+#tdModel{
+  margin-top: 100px;
+  text-decoration-line: underline;
+  font-size:55px;
+  color:#300069 ;
+}
+#pic{
+  margin-bottom: 70px;
+
+}
+.ghost-button {
+  cursor: pointer;
+  margin-bottom: 9px;
+  height: 60%;
+  width: 75%;
+  display: inline-block;
+  width: 85%;
+  padding: 5%;
+  color: #9d4dff;
+  background-color:  white;
+  border: 2px solid  #e3ccff;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  font-size: 80%;
+  text-decoration: none;
+  transition: background-color 1.8s ease-out,
+              color 1.4s ease-out;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #e3ccff;
+  color: #300069;
+  border: 4px solid #300069;
+  transition: background-color 0.5s ease-in,
+              color 0.1s ease-in;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "phonequiz",
+  "version": "1.0.0",
+  "description": "phonequiz",
+  "main": "phoneServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "smartphones"
+  ],
+  "author": "sarb",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.1.1",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.7",
+    "mongoose": "^5.0.17",
+    "serve-index": "^1.9.1"
+  },
+  "devDependencies": {
+    "babel-plugin-react-svg": "^2.1.0"
+  }
+}

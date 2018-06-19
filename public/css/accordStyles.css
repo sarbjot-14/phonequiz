@@ -1,0 +1,290 @@
+
+/*really light: #e3ccff light color #9d4dff, dark color: #300069 */
+
+
+#headingOne, #headingTwo, #headingThree, #headingFour, #headingFive, #headingSix{
+  text-align: center;
+
+}
+
+.contentTitles{
+  text-align: center;
+  color: #300069;
+
+
+}
+
+/*PRICE*/
+#price{
+  padding: 3%;
+}
+.buttonTitle{
+  background-color: #e3ccff;
+  margin: 0 auto;
+  width: 55%;
+  height:20%;
+  padding:2%;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.slidecontainer {
+    width: 100%;
+    margin: 0 ;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 20%;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-left:10%;
+    margin-right: 10%;
+
+}
+
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30%;
+    height: 25px;
+    background: #9d4dff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 225px;
+    height: 25px;
+    background: #9d4dff;
+    cursor: pointer;
+}
+.rangelabel{
+  display:inline;
+
+
+}
+#mid{
+  margin-left:30%;
+  margin-right:25%;
+}
+#low{
+  margin-left:15%;
+}
+#high{
+  margin-right:25%;
+}
+
+/*SCREEN SIZE AND RESOLUTION*/
+.checkbox-custom, .radio-custom{
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-custom,
+.checkbox-custom-label,
+.radio-custom,
+.radio-custom-label{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.checkbox-custom-label,
+.radio-custom-label{ position: relative }
+v
+.checkbox-custom + .checkbox-custom-label:before,
+.radio-custom + .radio-custom-label:before{
+  content: "";
+  background: transparent;
+  border: 2px solid #aaa;
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before,
+.radio-custom:checked + .radio-custom-label:before{
+  background: #9d4dff;
+  border: 2px solid #9d4dff;
+  box-shadow: inset 0px 0px 0px 2px #333;
+  border-color: #9d4dff;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label,
+.radio-custom:checked + .radio-custom-label{ color: #9d4dff }
+
+.radio-custom + .radio-custom-label:before{ border-radius: 50% }
+
+#screen{
+  float:right;
+  margin-right:17%;
+}
+#resolution{
+  float:left;
+  margin-left:17%;
+}
+#screen, #resolution{
+
+}
+/*battery*/
+
+#battery{
+
+  margin-left: 17%;
+  margin-right: 15%;
+  padding:2%;
+  padding-left:17%;
+
+
+}
+/*camera*/
+#camera{
+  padding: 3%;
+}
+/*microsd and memory*/
+
+#microSD{
+  margin-left:7%;
+  padding-left: 10%;
+}
+#microtitle{
+  margin-left: -12%;
+}
+
+#radio-14, #radio-15{
+
+}
+
+/*companies*/
+.container {
+    display: inline;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#companies{
+  margin-right: 18%;
+  margin-left: 18%;
+
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #d9d9d9;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #b3b3b3;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #9d4dff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* theSubmit button */
+
+/*really light: #e3ccff light color #9d4dff, dark color: #300069 */
+.theSubmit {
+  display: block;
+  border-radius: 4px;
+  background-color: #9d4dff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 15px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  text-align: center;
+  margin:0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.theSubmit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.theSubmit span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  transition: 0.5s;
+}
+
+.theSubmit:hover span {
+  padding-right: 40px;
+}
+
+.theSubmit:hover span:after {
+  opacity: 2;
+  right: 0;
+}

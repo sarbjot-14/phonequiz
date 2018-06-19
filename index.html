@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/other.css">
+    <link rel="stylesheet" href="/css/accordStyles.css">
+
+</head>
+  <body>
+  <!--  <img src= "thetechquest.png"  alt="Lamp" width="32" height="32" >-->
+
+  <ul>
+    <li><a href="https://www.instagram.com/the_tech_quest/?hl=en">Instagram</a></li>
+    <li><a href="https://twitter.com/TheTechQuest">Twitter</a></li>
+
+    <img id ="logo" src= "thetechquest.png"  alt="Lamp" >
+  </ul>
+
+
+  <h1 id="title">Find The Smartphone That Best Suits Your Needs</h1>
+  <h4 id="subtitle">Simply Fill Out This Form Below</h4>
+
+
+
+        <form action = "current" method = "POST">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="buttonTitle" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Price
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <div id="price" >
+                  <h3 class= "contentTitles">Price Estimation</h3>
+                    <div class="slidecontainer">
+
+                        <p id="low" class= "rangelabel">Low</p><p class = "rangelabel" id="mid">Mid</p><p id="high" class= "rangelabel">High</p>
+                        <input type="range" min="1" max="10" value="6" class="slider" name="price" >
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="buttonTitle" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Screen Size and Resolution
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+
+                  <!--SCREEN SIZE-->
+
+                    <div id="screen" >
+                      <h3 class= "contentTitles"> Screen Size (inches)</h3>
+                      <div>
+                        <input id="radio-1" class="radio-custom" name="screen" type="radio" value=">5" >
+                        <label for="radio-1" class="radio-custom-label">5.5 higher (Large)</label>
+                      </div>
+                      <div>
+                        <input id="radio-2" class="radio-custom" name="screen" type="radio" value= "5-5.5" checked>
+                        <label for="radio-2" class="radio-custom-label">5.0 - 5.5  (Medium)</label>
+                      </div>
+                      <div>
+                        <input id="radio-3" class="radio-custom" name="screen" type="radio" value="<4">
+                        <label for="radio-3" class="radio-custom-label">4-5 (Small)</label>
+                      </div>
+
+                    </div>
+
+                    <div id="resolution">
+                      <h3 class= "contentTitles"> Resolution (pixels)</h3>
+                      <div>
+                        <input id="radio-4" class="radio-custom" name="res" type="radio" value=">2k">
+                        <label for="radio-4" class="radio-custom-label">2560 and higher</label>
+                      </div>
+                      <div>
+                        <input id="radio-5" class="radio-custom" name="res" type="radio" value=">1080" checked>
+                        <label  for="radio-5" class="radio-custom-label">1080 and higher</label>
+                      </div>
+                      <div>
+                        <input id="radio-6" class="radio-custom" name="res" type="radio" value=">720">
+                        <label for="radio-6" class="radio-custom-label">720 and higher</label>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="buttonTitle" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Battery Life
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <h3 class= "contentTitles">Single Charge Usage</h3>
+                  <div id="battery">
+
+                    <div>
+                      <input id="radio-7" class="radio-custom" name="battery" type="radio" value=">35h">
+                      <label for="radio-7" class="radio-custom-label">35 hours and over (above average)</label>
+                    </div>
+                    <div>
+                      <input id="radio-8" class="radio-custom" name="battery" type="radio" value="29h-34h" checked>
+                      <label  for="radio-8" class="radio-custom-label">29 to 34 hours (average)</label>
+                    </div>
+                    <div>
+                      <input id="radio-9" class="radio-custom" name="battery" type="radio" value="<28h">
+                      <label for="radio-9" class="radio-custom-label">Less than 28 hours (below average)</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="buttonTitle" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Camera Quality based Dexomark Scores
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                <div id= "camera">
+                  <h3 class= "contentTitles"> Estimate your Camera Quality Needs</h3>
+                    <div class="slidecontainer">
+                      <div >
+                        <p id="low" class= "rangelabel">Low</p><p class = "rangelabel" id="mid">Mid</p><p id="High" class= "rangelabel">High</p>
+                        <input type="range" min="55" max="109" value="83" class="slider" name="camera" >
+
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="buttonTitle" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Memory
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="card-body">
+              <div id="screen" >
+                <h3 class= "contentTitles"> Internal Memory</h3>
+
+                <div>
+                  <input id="radio-10" class="radio-custom" name="memory" type="radio" value="128" >
+                  <label for="radio-10" class="radio-custom-label">Up to 128GB </label>
+                </div>
+                <div>
+                  <input id="radio-11" class="radio-custom" name="memory" type="radio" value= "64" checked>
+                  <label for="radio-11" class="radio-custom-label">Up to 64GB </label>
+                </div>
+                <div>
+                  <input id="radio-12" class="radio-custom" name="memory" type="radio" value="32">
+                  <label for="radio-12" class="radio-custom-label">Up to 32GB </label>
+                </div>
+                <div>
+                  <input id="radio-13" class="radio-custom" name="memory" type="radio" value="16">
+                  <label for="radio-13" class="radio-custom-label">Up to 16GB </label>
+                </div>
+
+              </div>
+
+              <div id="microSD">
+                <h3 id="microtitle" class= "contentTitles">microSD Option</h3>
+                <div>
+                  <input id="radio-14" class="radio-custom" name="microSD" type="radio" value="yes">
+                  <label for="radio-14" class="radio-custom-label">Yes</label>
+                </div>
+                <div>
+                  <input id="radio-15" class="radio-custom" name="microSD" type="radio" value="doesnotmatter" checked>
+                  <label  for="radio-15" class="radio-custom-label">Does not matter</label>
+                </div>
+
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h5 class="mb-0">
+            <button class="buttonTitle" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Preferred Companies
+            </button>
+          </h5>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+          <div class="card-body">
+            <div id= "companies">
+              <label class="container">Samsung
+                <input name="company" value="Samsung" type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Apple
+                <input name="company" value="Apple" type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">LG
+                <input name="company" value="LG" type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Motorola
+                <input name="company" value="Motorola" type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">ZTE
+                <input name="company" value="ZTE" type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">HTC
+                <input name="company" value="HTC" type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Huawei
+                <input name="company" value="Huawei" type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Oppo
+                <input name="company" value="Oppo" type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Xiaomi
+                <input name="company" value="Xiaomi" type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Google
+                <input name="company" value="Google" type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <button type="submit" class="theSubmit" style="vertical-align:middle"><span>Submit </span></button>
+  </form>
+
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!--<script src="js/main.js"></script>-->
+  </body>
+</html>
