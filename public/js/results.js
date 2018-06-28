@@ -28,7 +28,7 @@ function changing(data){
   var table = document.createElement('table');
   table.setAttribute("id", "table");
 
-  for (var i = 0; i < theSelections.length; i++){
+  for (var i = 0; i < 10 /*theSelections.length*/; i++){
       //console.log(theSelections.score);
 
       var trlong = document.createElement('tr');

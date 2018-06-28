@@ -288,3 +288,16 @@ v
   opacity: 2;
   right: 0;
 }
+@media screen and (max-width: 974px){
+  .buttonTitle{
+    background-color: #e3ccff;
+    margin: 0 auto;
+    width: 85%;
+    height:20%;
+    padding:2%;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+}
