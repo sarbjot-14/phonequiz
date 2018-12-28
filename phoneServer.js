@@ -50,29 +50,26 @@ app.get('/', function(req,res,next){
 
 
 
-
+//gives admin access to admin page 
 app.get('/admin', function(req,res,next){
   res.sendFile(__dirname + '/admin.html');
 
 });
 
-
+  
 app.post('/current', function(req,res,next){
-    // console.log("currrrent and price??")
+    // removes previous results from last user
     selections.remove();
     var current= req.body;
 
-   //console.log(req.body);
-   // console.log(current.price);
    phones.find({}).toArray(function(err, result) {
      if (err) throw err;
-     //console.log(result);
-
-
+     
+     
+     //takes each phone specs from database
      result.forEach(function(cell){
-
-
-       ///////////price
+        //give score to each phone by comparing phone specs and user submission
+       //give score based on price
        if(Math.abs(current.price - cell.price)<=3){
          //console.log(cell);
          cell.score= +cell.score + 15;
@@ -84,14 +81,14 @@ app.post('/current', function(req,res,next){
          // console.log(cell);
          cell.score= +cell.score + 5;
        }
-       //SCREEN
+       //give score based on screen size
        if(current.screen==cell.screen){
          cell.score= +cell.score + 20;
        }
        else if(cell.screen== "<4"){
          cell.score= +cell.score -10;
        }
-       //Resolution
+       //give score based on resolution
        if(current.res==cell.res){
          cell.score= +cell.score + 10;
        }
@@ -103,11 +100,11 @@ app.post('/current', function(req,res,next){
            cell.score= +cell.score +10;
          }
        }
-       //battery
+       //give score based on battery
        if(current.battery==cell.battery){
          cell.score= +cell.score + 15;
        }
-       //Camera
+       //give score based on camera qualtiy
 
        if(Math.abs(current.camera - cell.camera)<=10){
          //console.log(cell);
@@ -121,7 +118,7 @@ app.post('/current', function(req,res,next){
          // console.log(cell);
          cell.score= +cell.score + 7;
        }
-       //memory
+       //give score based on memory of phone
 
        if(current.microSD== cell.microSD){
          cell.score= +cell.score + 15;
@@ -133,7 +130,7 @@ app.post('/current', function(req,res,next){
          cell.score= +cell.score + 15;
 
        }
-       //Preferred
+       //score on Preferred of user
 
        console.log(current);
        if (current.company.constructor != Array){
@@ -152,7 +149,7 @@ app.post('/current', function(req,res,next){
        }
 
 
-
+        //insert result into database
        selections.insert(cell, function(err, result){
          //console.log(result);
        });
@@ -160,12 +157,12 @@ app.post('/current', function(req,res,next){
      })
 
    });
-  // users.push(req.body);
+  // displays the results 
   res.sendFile(__dirname + '/results.html');
 });
 
 
-
+//admin inserts phone into database and route back to admin page
 app.post('/newPhone', function(req,res,next){
   console.log(req.body);
   //users.push(req.body);
