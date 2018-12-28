@@ -1,10 +1,10 @@
 // users-api
-
+//create sever using express
 var express = require('express');
 var app = express();
 var serverIndex = require('serve-index');
 var http = require('http');
-
+//create mongodb server
 var MongoClient = require('mongodb').MongoClient;
 
 var url = "mongodb://sarb:Sarbjot22@ds121599.mlab.com:21599/mydb";
@@ -39,13 +39,10 @@ app.use('/', function(req,res,next){
   next();
 });
 
-// app.all('/', function(req,res,next){
-//   console.log('Accessing root folder');
-//   next();
-// });
+
 
 app.use('/', express.static('./public', options));
-
+//send homepage when root is requested
 app.get('/', function(req,res,next){
   res.sendFile(__dirname + '/index.html');
 
