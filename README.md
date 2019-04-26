@@ -4,6 +4,6 @@ Website created to give you custom smartphone recomendations based on your selec
 
 ## Getting Started
 
-Clone the repository and open up the index.html file in a browser.
+Clone the repository. Run phoneServer.js with NodeJs. Open index.html
 
-Fill the Survey and submit for results.
+Fill the Survey and submit for results. 
